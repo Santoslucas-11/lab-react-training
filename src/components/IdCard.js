@@ -2,20 +2,20 @@ import React from 'react'
 
 function IdCard(props) {
     const {lastName, firstName, gender, height, birth, picture} = props;
-   
-    return (
-        <div>
-            <img src={picture} alt="profile pic" />
-
-            <div>
-                <p><b>First name:</b> {firstName}</p>
-                <p><b>Last name:</b> {lastName}</p>
-                <p><b>Gender:</b> {gender}</p>
-                <p><b>Height:</b> {height}m</p>
-                <p><b>Birth:</b> {birth}</p>
-            </div>
-        </div>
-    )
+  return (
+    <div>
+    <div>
+    <div>
+     <img src={picture} alt="profile"/> 
+    </div>
+    <p>First Name: {firstName}</p>
+    <p>Last Name: {lastName}</p>
+    <p>Gender: {gender}</p>
+    <p>Height: {height}</p>
+    <p>Birth: {birth.toLocaleString()}</p>
+    </div>
+    </div>
+  )
 }
 
 export default IdCard;

@@ -1,7 +1,6 @@
 import React from 'react'
 
 function Random({min, max}) {
-
     let number = Math.floor(Math.random() * (max - min) + min);
   return (
     <div>
@@ -10,4 +9,4 @@ function Random({min, max}) {
   )
 }
 
-export default Random
+export default Random;
